@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include <time.h>
 
 /**
@@ -16,8 +18,8 @@ int main(void)
 
 	char p[58];
 
-	srand(time(NULL));
 
+	srand(time(NULL));
 	while (s != 2772)
 	{
 		i = k = s = 0;
@@ -28,19 +30,21 @@ int main(void)
 			s += c[j];
 			i++;
 		}
-		while (c[k]
+
+	        while (c[k])
 		{
-			if (c[k] == (2772 - s))
-			{
+  			if (c[k] == (2772 - s))
+ 		      	 {
 				p[i] = c[k];
 				s += c[k];
 				i++;
 				break;
-			}
+	      	        }
 			k++;
 		}
-	}
-	p[i] = '\0';
-	printf("%s", p);
-	return (0);
+
+       	}
+		p[i] = '\0';
+		printf("%s", p);
+		return (0);
 }
