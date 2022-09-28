@@ -18,8 +18,7 @@ int _strlen_recursion(char *s)
 }
 
 /**
-
-* is_palindrome - A function that checks if s is a palindrome string
+ * is_palindrome - A function that checks if s is a palindrome string
  * @s: An inpuit string
  * Return: 1 if is string is a palindrome or 0 in otherwise
  */
